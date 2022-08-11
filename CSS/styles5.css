@@ -1,0 +1,246 @@
+/*-----------------CORPS--------------------------------------------------------------------------------------------- */
+
+body {
+    
+    background-color: #1B2D53;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    filter: drop-shadow(5px 5px 10px black);
+
+}
+
+/*-----------------HEADER--------------------------------------------------------------------------------------------- */
+
+nav {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #162647;
+    height: 73px;
+    font-size: 18px;
+}
+
+  
+ul {
+    
+    display: flex;
+    column-gap: 25px;
+    color: white;
+    font-size: 89%;
+    
+}
+
+nav ul li{
+    
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+   
+    font-size: 80%;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.active.active,.active:hover {
+    
+    background: #E31D1D;
+    transition: .5s;
+
+}
+
+.accueil1:hover {
+    
+    background: #E31D1D;
+    transition: .5s;
+
+}
+
+/*-----------------LOGO--------------------------------------------------------------------------------------------- */
+
+.logo {
+    
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.logo span {
+
+    color: #E31D1D;
+
+} 
+
+/*-----------------MENU WHY ?--------------------------------------------------------------------------------------------- */
+
+.menu {
+
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    background-color:#ffffff;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/*-----------------SECTION CONTACT--------------------------------------------------------------------------------------------- */
+
+
+section#contact {
+
+    padding: 100px 15px;
+
+}
+
+
+section#contact .container {
+
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #162647;
+}  
+
+section#contact .container .title {
+
+    text-align: center;
+    margin-bottom: 6px;
+    color: white
+}
+
+section#contact .container .title h6 {
+
+    font-size: 1em;
+}
+
+section#contact .container .title h3 {
+
+    font-size: 2.2em;
+}
+
+
+section#contact .container form {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 750px;
+}
+
+
+section#contact .container form input {
+    width: 45%;
+}
+
+section#contact .container form input:hover,
+section#contact .container form textarea:hover {
+
+    border-bottom: 3.5px solid #E31D1D;
+
+}
+
+section#contact .container form input,
+section#contact .container form textarea {
+
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px;
+    transition: 0.2s;
+    border-radius: 4px;
+
+}
+
+section#contact .container form textarea {
+
+    width: 100%;
+    height: 100px;
+    resize: none;
+
+}
+
+section#contact .container form button {
+    
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color:#1B2D53;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+    
+}
+
+section#contact .container button:hover {
+
+    transition: .5s;
+    background-color: #E31D1D;
+    transform: translateY(-5px);
+
+}
+
+/*-----------------FOOTER--------------------------------------------------------------------------------------------- */
+
+
+.foot {
+
+    color: white;
+    padding: 1rem;
+    background-color: #1B2D53;
+    text-align: center;
+    font-size: 12px;
+    position:relative;
+
+}
+
+.mention {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+/*-----------------RESPONSIVE--------------------------------------------------------------------------------------------- */
+
+
+@media screen and ( max-width: 500px) {
+    section#contact .container form {
+    flex-direction: columns;
+    width: 95%;    
+}
+
+section#contact .container form input {
+
+    width: 100%;
+    
+    }
+
+}

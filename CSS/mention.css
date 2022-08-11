@@ -1,0 +1,109 @@
+body {
+
+    background-color: #1B2D53;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    filter: drop-shadow(5px 5px 10px black);
+
+}
+
+.Mentions_legales {
+
+    margin: 2em;
+    padding: 1em;
+
+}
+
+h3 {
+
+    color: burlywood;
+}
+
+p {
+
+    color: white;
+}
+
+/*-----------------Header--------------------------------------------------------------------------------------------- */
+
+header{
+   
+    position: sticky;
+    top: 0;
+}
+
+.navbar {  
+    
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;   
+    font-size: 1rem;
+    background: #162647;
+
+}
+
+.navbar a{
+   
+    color: black;
+    font-size: 80%;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+
+}
+ 
+.navbar ul {
+
+    list-style:none;
+}
+
+
+.navbar li{
+    
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+.active.active,.active:hover {
+    
+    background: burlywood;
+    transition: .5s;
+
+}
+
+
+/*-----------------LOGO TV.--------------------------------------------------------------------------------------------- */
+
+.navbar__logo {
+    
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.navbar__logo span {
+
+    color: burlywood
+
+} 
+
+/*-----------------LISTE--------------------------------------------------------------------------------------------- */
+
+.liste ul{ 
+    
+    color: white; 
+
+    }
+
+.liste li a {
+
+    text-decoration: none;
+    outline: none;
+    color: white;
+    pointer-events: none;
+
+}

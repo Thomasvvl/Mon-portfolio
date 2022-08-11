@@ -1,0 +1,422 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    background-color: #1B2D53;
+    filter: drop-shadow(5px 5px 10px black);
+
+}
+
+/*-----------------Header--------------------------------------------------------------------------------------------- */
+
+header {
+
+    position: sticky;
+    top: 0;
+}
+
+
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #162647;
+
+}
+
+.navbar a {
+
+    color: white;
+    font-size: 80%;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+
+}
+
+ul {
+
+    list-style: none;
+    
+}
+
+
+li {
+
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+
+.red:hover {
+
+    background: #E31D1D;
+    transition: .5s;
+
+}
+
+/*-----------------LOGO TV.--------------------------------------------------------------------------------------------- */
+
+.navbar__logo {
+
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.navbar__logo::first-letter {
+
+    color: #E31D1D;
+
+}
+
+
+
+/*-----------------Accueil--------------------------------------------------------------------------------------------- */
+
+
+.presentation {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 80px;
+    color: white;
+    text-align: justify;
+
+
+}
+
+.presentation .mid {
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 15px;
+
+
+}
+
+
+.presentation h1 {
+
+    color: #E31D1D;
+    height: 30px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+
+
+}
+
+.presentation h3 {
+
+    font-size: 160%;
+    font-family: 'Impact';
+
+
+}
+
+.presentation p {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+
+/*-----------------LES LOGOS--------------------------------------------------------------------------------------------- */
+
+.social_container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #fff;
+
+}
+
+
+.fa {
+
+    float: left;
+    padding: 20px;
+    font-size: 40px;
+    width: 20px;
+    text-decoration: none;
+    margin: 0px 15px;
+    cursor: pointer;
+    background-color: #162647;
+    text-align: center;
+    border-radius: 35px;
+    transition: .5s;
+    color: #fff;
+
+
+}
+
+.fa:hover {
+
+    background: #E31D1D;
+    transform: translateY(-5px);
+}
+
+
+/*-----------------IMAGE--------------------------------------------------------------------------------------------- */
+
+
+
+.cercle {
+
+    width: 300px;
+    height: 280px;
+    border-radius: 100%;
+    background: #162647;
+
+
+}
+
+.bitmoji {
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: -50px;
+    margin-left: 150px;
+
+
+}
+
+img {
+
+    width: 100%;
+
+}
+
+
+/*-----------------RESPONSIVE--------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 810px) {
+
+    /* .navbar {
+
+        display: none;
+    }  */
+
+    .bitmoji {
+
+        display: none;
+    }
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    background-color: #1B2D53;
+    filter: drop-shadow(5px 5px 10px black);
+
+}
+
+/*-----------------Header--------------------------------------------------------------------------------------------- */
+
+header {
+
+    position: sticky;
+    top: 0;
+}
+
+
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #162647;
+
+}
+
+.navbar a {
+
+    color: white;
+    font-size: 80%;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+
+}
+
+ul {
+
+    list-style: none;
+}
+
+
+li {
+
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+
+.red:hover {
+
+    background: #E31D1D;
+    transition: .5s;
+
+}
+
+/*-----------------LOGO TV.--------------------------------------------------------------------------------------------- */
+
+.navbar__logo {
+
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.navbar__logo span {
+
+    color: #E31D1D;
+
+}
+
+
+
+/*-----------------Accueil--------------------------------------------------------------------------------------------- */
+
+
+.presentation {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 80px;
+    color: white;
+    text-align: justify;
+
+
+}
+
+.presentation .mid {
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 15px;
+
+
+}
+
+
+.presentation h1 {
+
+    color: #E31D1D;
+    height: 30px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+
+
+}
+
+.presentation h3 {
+
+    font-size: 160%;
+    font-family: 'Impact';
+
+
+}
+
+.presentation p {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+
+/*-----------------LES LOGOS--------------------------------------------------------------------------------------------- */
+
+.social_container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #fff;
+
+}
+
+
+.fa {
+
+    float: left;
+    padding: 20px;
+    font-size: 40px;
+    width: 20px;
+    text-decoration: none;
+    margin: 0px 15px;
+    cursor: pointer;
+    background-color: #162647;
+    text-align: center;
+    border-radius: 35px;
+    transition: .5s;
+    color: #fff;
+
+
+}
+
+.fa:hover {
+
+    background: #E31D1D;
+    transform: translateY(-5px);
+}
+
+
+/*-----------------IMAGE--------------------------------------------------------------------------------------------- */
+
+
+
+.cercle {
+
+    width: 300px;
+    height: 280px;
+    border-radius: 100%;
+    background: #162647;
+
+
+}
+
+.bitmoji {
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: -50px;
+    margin-left: 150px;
+
+
+}
+
+img {
+
+    width: 100%;
+
+}
+
+
+/*-----------------RESPONSIVE--------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 810px) {
+
+    .bitmoji {
+
+        display: none;
+    }
+
+}
+}
