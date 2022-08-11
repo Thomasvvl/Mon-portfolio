@@ -85,11 +85,11 @@ header{
     font-weight: bold;
 }
 
-.navbar__logo span {
+.navbar__logo::first-letter {
 
-    color: burlywood
+    color: burlywood;
 
-} 
+}
 
 /*-----------------LISTE--------------------------------------------------------------------------------------------- */
 

@@ -1,3 +1,4 @@
+// SLIDE IMAGE-----------------------------------------------------------------
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -28,3 +29,18 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+//MENU BURGER ---------------------------------------------------------------
+
+const menuBtn = document.querySelector(".menu-btn");
+let menuOpen = false;
+
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+  }
+});
