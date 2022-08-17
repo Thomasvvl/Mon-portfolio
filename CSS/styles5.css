@@ -12,56 +12,34 @@ body {
 
 /*-----------------HEADER--------------------------------------------------------------------------------------------- */
 
+
 nav {
-
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: #162647;
-    height: 73px;
-    font-size: 18px;
-}
-
-  
-ul {
-    
     display: flex;
-    column-gap: 25px;
-    color: white;
-    font-size: 89%;
-    
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav ul li{
-    
+ nav .mainMenu {
+    display: flex;
+    list-style: none;
+    font-size: 0;
+}
+
+nav .mainMenu li a {
     display: inline-block;
-    line-height: 40px;
-    margin: 0 5px;
-}
-
-nav ul li a{
-   
-    font-size: 80%;
-    color: white;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
     text-decoration: none;
-
-}
-
-.active.active,.active:hover {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 7px 20px;
+    transition: 0.2s ease;
     
-    background: #E31D1D;
-    transition: .5s;
+  }
 
-}
-
-.accueil1:hover {
-    
+nav .mainMenu li a:hover {
     background: #E31D1D;
-    transition: .5s;
+    border-radius: 3px;
 
 }
 
@@ -237,8 +215,10 @@ section#contact .container button:hover {
 /*-----------------RESPONSIVE--------------------------------------------------------------------------------------------- */
 
 
-@media screen and ( max-width: 500px) {
-    section#contact .container form {
+@media screen and ( max-width: 640px) {
+    
+    
+section#contact .container form {
     flex-direction: columns;
     width: 95%;    
 }
