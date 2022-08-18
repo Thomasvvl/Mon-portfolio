@@ -24,6 +24,7 @@ nav {
     display: flex;
     list-style: none;
     font-size: 0;
+    margin-right: 5vh;
 }
 
 nav .mainMenu li a {
@@ -214,17 +215,24 @@ section#contact .container button:hover {
 
 /*-----------------RESPONSIVE--------------------------------------------------------------------------------------------- */
 
+@media screen and ( max-width: 839px){
+
+    nav .mainMenu {
+        
+        font-size: 200px;
+    }
+
+
+}
 
 @media screen and ( max-width: 640px) {
     
-    
-section#contact .container form {
+    section#contact .container form {
     flex-direction: columns;
     width: 95%;    
 }
 
-section#contact .container form input {
-
+    section#contact .container form input {
     width: 100%;
     
     }

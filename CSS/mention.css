@@ -25,48 +25,43 @@ p {
 
 /*-----------------Header--------------------------------------------------------------------------------------------- */
 
-header{
-   
+nav {
+    background: #162647;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: sticky;
     top: 0;
 }
 
-.navbar {  
-    
+ nav .mainMenu {
     display: flex;
-    align-items: center; 
-    justify-content: space-between;   
-    font-size: 1rem;
-    background: #162647;
-
-}
-
-.navbar a{
-   
-    color: black;
-    font-size: 80%;
-    padding: 7px 13px;
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    margin: 10px;
     border-radius: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: .5s;
 
 }
- 
-.navbar ul {
 
-    list-style:none;
-}
-
-
-.navbar li{
-    
+nav .mainMenu li a {
     display: inline-block;
-    line-height: 40px;
-    margin: 0 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px 20px;
+    transition: 0.2s ease;
+
+    
+  }
+
+nav .mainMenu li a:hover {
+    background: rgb(208, 164, 106);
 }
 
-.active.active,.active:hover {
+
+.mainMenu, .red:active {
     
     background: burlywood;
     transition: .5s;
@@ -110,13 +105,21 @@ header{
 
 @media screen and (max-width: 640px) {
     
-    .navbar {  
+    nav {  
     
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
+   
     
     }
 
+    nav .mainMenu {
+
+        margin-top: -10px;
+
+    }
+    
 
 }
