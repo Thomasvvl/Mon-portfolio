@@ -1,18 +1,14 @@
 body{
-
     margin: 0;
     padding: 0;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     background-color: #1B2D53;
     filter: drop-shadow(5px 5px 10px black);
-
 }
 
 html{
-
     scroll-behavior: smooth;
 }
-
 /*-----------------Header--------------------------------------------------------------------------------------------- */
 
 header{
@@ -69,7 +65,6 @@ nav .mainMenu .closeMenu,
 /*-----------------LOGO TV.--------------------------------------------------------------------------------------------- */
 
 .navbar__logo {
-
     color: white;
     font-size: 20px;
     line-height: 60px;
@@ -78,76 +73,50 @@ nav .mainMenu .closeMenu,
 }
 
 .navbar__logo::first-letter {
-
     color: #E31D1D;
-
 }
-
-
-
 /*-----------------Accueil--------------------------------------------------------------------------------------------- */
 
-
 .presentation {
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 80px;
     color: white;
     text-align: justify;
-
-
 }
 
 .presentation .mid {
-
     grid-row-start: 1;
     grid-row-end: 2;
     padding: 15px;
-
-
 }
 
 
 .presentation h1 {
-
     color: #E31D1D;
     height: 30px;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-
-
 }
 
 .presentation h3 {
-
     font-size: 160%;
     font-family: 'Impact';
-
-
 }
 
 .presentation p {
-
     font-family: "Segoe UI", Arial, sans-serif;
-
 }
-
-
 /*-----------------LES RESEAUX--------------------------------------------------------------------------------------------- */
 
 .social_container {
-
     display: grid;
     grid-template-columns: repeat(3, 0fr);
     grid-row-start: 2;
     grid-row-end: 3;
     color: #fff;
-
 }
 
-
 .fa {
-
     float: left;
     padding: 20px;
     font-size: 40px;
@@ -160,57 +129,305 @@ nav .mainMenu .closeMenu,
     border-radius: 35px;
     transition: .5s;
     color: #fff;
-
-
 }
 
 .fa:hover {
-
     background: #E31D1D;
     transform: translateY(-5px);
 }
 
-
 /*-----------------IMAGE--------------------------------------------------------------------------------------------- */
 
-
-
 .cercle {
-
     width: 300px;
     height: 280px;
     border-radius: 100%;
     background: #162647;
-
-
 }
 
 .bitmoji {
-
     grid-column-start: 2;
     grid-column-end: 3;
     margin-top: -50px;
     margin-left: 150px;
-
-
 }
 
 img {
-
     width: 100%;
+}
+
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+
+.para-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    margin-top: 130px;
+    width: 100%;
+    text-align: justify;
+}
+
+.para-container h1 {
+    font-size: 150%;
+    height: 50px;
+}
+
+.para-container .para_2 {
+    padding-top: 10px;
+    font-size: 15px;   
+}
+
+.para-container .texte{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 40px;
+    padding-top: 20%;
+}
+
+.texte h1::first-letter{
+    color: #E31D1D;
+}
+/*-----------------BOUTTON DOWNLOAD--------------------------------------------------------------------------------------------- */
+
+.submit button {
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    background-color:#162647;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .5s;
+    color: white;
+}
+
+.submit button:hover {
+    transition: .5s;
+    background-color: #E31D1D;
+    transform: translateY(-5px);
+}
+/*-----------------IMAGE--------------------------------------------------------------------------------------------- */
+
+.snap img {
+    width: 290px;
+    margin-left: 130px;
+    padding-top: 10%;
+}
+
+/*-----------------PROJETS--------------------------------------------------------------------------------------------- */
+/*-----------------PROJETS--------------------------------------------------------------------------------------------- */
+/*-----------------PROJETS--------------------------------------------------------------------------------------------- */
+/*-----------------PROJETS--------------------------------------------------------------------------------------------- */
+/*-----------------PROJETS--------------------------------------------------------------------------------------------- */
+
+
+/*-----------------Contenue entier--------------------------------------------------------------------------------------------- */
+
+.Projets {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 15px;
+    grid-template-areas:
+      "a a a a b b b b";
+    align-items: start;
+    padding-top: 8%;   
+}
+/*-----------------TEXTE--------------------------------------------------------------------------------------------- */
+
+.container_projet {
+    grid-area: a;
+    margin-left: 30px;
+    color: white;
+    padding-top: 30px;
+}
+
+.container_projet::first-letter{
+    color: #E31D1D;
+}
+/*-----------------SLIDE--------------------------------------------------------------------------------------------- */
+
+.custom-slider { 
+    display: none; 
+}
+
+.slide-container {    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-area: b;
+    padding: 40px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.slide-text {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.slide-index {    
+    color: #fff;
+    font-size: 13px;
+    padding: 8px;
+}
+
+.slide-dot{ 
+    margin-left: 45%;
+}
+
+.dot {    
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #E31D1D;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {     
+    background-color: #ffffff; 
+}
+
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+/*-----------------IMAGE--------------------------------------------------------------------------------------------- */
+
+.slide-img{    
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*-----------------Contenue entier--------------------------------------------------------------------------------------------- */
+
+.wrapper {
+    
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr 1fr); */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    color: white;
 
 }
+
+/*-----------------TEXET--------------------------------------------------------------------------------------------- */
+
+.parag {
+
+    text-align: center;
+
+}
+
+.parag h2{
+
+    text-align: center;
+}
+
+/*-----------------Image--------------------------------------------------------------------------------------------- */
+
+.wrapper .image {
+
+    padding: 58px;
+    text-align: center;
+
+}
+
+.wrapper img {
+   
+    height: 200px;
+    width: 300px;
+
+}
+
+
+/*-----------------FOOTER--------------------------------------------------------------------------------------------- */
+
+.foot {
+
+    color: white;
+    padding: 1rem;
+    background-color: #1B2D53;
+    text-align: center;
+    font-size: 12px;
+
+
+}
+
+
+footer {
+
+    position: fixed;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+
+
+}
+
+/*-----------------MENTIONS LEGALES--------------------------------------------------------------------------------------------- */
+
+.mention {
+
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+
 
 
 /*-----------------RESPONSIVE --------------------------------------------------------------------------------------------- */
 
+@media screen and (max-width: 1024px) {
+
+    .Projets {
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .slide-img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    .wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    
+    
+}
+
+}
 
 @media screen and (max-width: 640px) {
 
-
+/*-----------------ACCUEIL--------------------------------------------------------------------------------------------- */
+/*-----------------ACCUEIL--------------------------------------------------------------------------------------------- */
+/*-----------------ACCUEIL--------------------------------------------------------------------------------------------- */
+/*-----------------ACCUEIL--------------------------------------------------------------------------------------------- */
+/*-----------------ACCUEIL--------------------------------------------------------------------------------------------- */
 
 nav .mainMenu {
-
     height: 100vh;
     position: fixed;
     top: 0px;
@@ -226,119 +443,119 @@ nav .mainMenu {
 }
 
 nav .mainMenu .closeMenu {
-    
     display: block;
     position: absolute;
     top: 20px;
     right: 20px;
-
 }
 
-nav .openMenu {
-    
+nav .openMenu {    
     display: block;
- 
-
-
 }
 
-nav .mainMenu li a:hover {
-    
+nav .mainMenu li a:hover {    
     background: none;
     color: #E31D1D
 }
-
-
-
-
-
 /*-----------------ACCUEIL--------------------------------------------------------------------------------------------- */
 
-.presentation {
- 
+.presentation { 
     display: flex;
     flex-direction: column ;
     margin: 0;
     padding: 0;
     margin-top: 4em;
     width: 100%;
-
 }
 
 .presentation h3{
-
     text-align: center;
-
 }
 
-
 .presentation p {
-
     text-align: center;
 }
 
 .mid {
-    
     display: flex;
     flex-direction: column ;
     align-items: center;
     margin-top: 3em;  
-    
 }
-
-
-
-
-
 /*-----------------LOGO TV.--------------------------------------------------------------------------------------------- */
 
 .navbar__logo {
-
     color: white;
     font-size: 30px;
     padding: 0 40px;
     font-weight: bold;
-
 }
 
 .navbar__logo span {
-
     color: #E31D1D;
-
 }
-
-
-
 /*-----------------LES RESEAUX--------------------------------------------------------------------------------------------- */
 
 .social_container {
-
-    justify-content: center;
-    
-    
+    justify-content: center;    
 }
 
 .fa {
-    
-
     margin-top: 30px;
-    
-   
 }
 
 .fa:hover {
-
     background: none;
-   
 }
-
 /*-----------------IMAGE--------------------------------------------------------------------------------------------- */
 
-
 .bitmoji {
-
     display: none;
 }
 
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+/*-----------------A PROPOS--------------------------------------------------------------------------------------------- */
+
+.para-container {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1em;      
+}   
+
+.snap{
+    display: none;
 }
 
+/*-----------------PROJETS--------------------------------------------------------------------------------------------- */
+/*-----------------PROJETS--------------------------------------------------------------------------------------------- */
+/*-----------------PROJETS--------------------------------------------------------------------------------------------- */
+/*-----------------PROJETS--------------------------------------------------------------------------------------------- */
+/*-----------------PROJETS--------------------------------------------------------------------------------------------- */
+
+.slide-img{   
+    width: 100%;
+    height: 100%;
+}
+
+.Projets {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;        
+}
+/*-----------------HOBBIES--------------------------------------------------------------------------------------------- */
+/*-----------------HOBBIES--------------------------------------------------------------------------------------------- */
+/*-----------------HOBBIES--------------------------------------------------------------------------------------------- */
+/*-----------------HOBBIES--------------------------------------------------------------------------------------------- */
+/*-----------------HOBBIES--------------------------------------------------------------------------------------------- */
+.wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+}
+}

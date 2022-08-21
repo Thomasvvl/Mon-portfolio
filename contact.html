@@ -4,72 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles5.css">
+    <link rel="stylesheet" href="CSS/contact.css">
     <title>Formulaire de Contact</title>
 </head>
-    
-    <body>
+<body>
 
-            <header>
-
-                <nav>
-                    <div class="navbar__logo">TV.</div>
-                    <div class="openMenu"><i class="fa fa-bars"></i></div>
-                    <ul class="mainMenu">
-                        <li><a class="red" href="index.html">ACCUEIL</a></li>
-                        <li><a class="red" href="contact.html">CONTACT</a></li>
-                        <div class="closeMenu"><i class="fa fa-times"></i></div>
-                    </ul>
-                </nav>
-        
-                </header>
+    <header>
+        <nav>
+            <div class="navbar__logo">TV.</div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a class="red" href="index.html">ACCUEIL</a></li>
+                <li><a class="red" href="contact.html">CONTACT</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+    </header>
     
     
-        <section id="contact">
+    <section id="contact">
 
-            <div class="container">
-
-                <div class="title">
-                    <h6>Une question ? un conseil ?</h6>
-                    <h3>Contactez-moi</h3>
-                </div>
-    
-                <form action="/message.html" method="post">
-                    
-                    <input type="text" name="NOM" placeholder="Entrer votre nom..." required="">
-                    <input type="text" name="PRENOM" placeholder="Entrer votre prénom..." required="">
-                    <input type="email" name="E-MAIL" placeholder="Entrer votre e-mail..." required="">
-                    <input type="tel" name="NUMERO" placeholder="Entrer votre numéro de téléphone..." required="">
-                    
-                    <select class="menu">
-                    <option value=""> Objet de votre demande </option>
-                    <option value="lorem">Création d'un site web / mobile</option>
-                    <option value="lorem1">Création d'une application mobile</option>
-                    <option value="autre">Offre d'emploi</option>
-                    <option value="autre">Demande de projet</option>
-                    <option value="autre">Autre...</option>
-                    </select>
-
-                    <textarea name="message" placeholder="Entrer votre message"></textarea>
-                    <button type="submit">Envoyer</button>
-                
-                </form>
+        <div class="container">
+            <div class="title">
+                <h6>Une question ? un conseil ?</h6>
+                <h3>Contactez-moi</h3>
             </div>
-            
-        </section>
 
-        <section id="Hobbies">
+            <form action="/message.html" method="post">              
+                <input type="text" name="NOM" placeholder="Entrer votre nom..." required="">
+                <input type="text" name="PRENOM" placeholder="Entrer votre prénom..." required="">
+                <input type="email" name="E-MAIL" placeholder="Entrer votre e-mail..." required="">
+                <input type="tel" name="NUMERO" placeholder="Entrer votre numéro de téléphone..." required="">
+                
+                <select class="menu">
+                <option value=""> Objet de votre demande </option>
+                <option value="lorem">Création d'un site web / mobile</option>
+                <option value="lorem1">Création d'une application mobile</option>
+                <option value="autre">Offre d'emploi</option>
+                <option value="autre">Demande de projet</option>
+                <option value="autre">Autre...</option>
+                </select>
 
-            <footer>
-                <div class="foot">
-                    
-                    © Copyright 2022 | <a class="mention"  href="mentions.html"> Mentions Legales </a> | Site réaliser par Thomas              
-                </div>
-
-            </footer>
-        </section>     
-
-        <script src="JS/index.js"></script>
+                <textarea name="message" placeholder="Entrer votre message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>       
+    </section>
+    
+    <footer>
+        <div class="foot"> © Copyright 2022 | <a class="mention"  href="mentions.html"> Mentions Legales </a> | Site réaliser par Thomas</div>
+    </footer>
         
-    </body>
+</body>
 </html>

@@ -1,17 +1,13 @@
 /*-----------------CORPS--------------------------------------------------------------------------------------------- */
 
-body {
-    
+body {  
     background-color: #1B2D53;
     margin: 0;
     padding: 0;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     filter: drop-shadow(5px 5px 10px black);
-
 }
-
 /*-----------------HEADER--------------------------------------------------------------------------------------------- */
-
 
 nav {
     background: #162647;
@@ -34,20 +30,16 @@ nav .mainMenu li a {
     color: #ffffff;
     font-size: 13px;
     padding: 7px 20px;
-    transition: 0.2s ease;
-    
-  }
+    transition: 0.2s ease;    
+}
 
 nav .mainMenu li a:hover {
     background: #E31D1D;
     border-radius: 3px;
-
 }
-
 /*-----------------LOGO--------------------------------------------------------------------------------------------- */
 
-.navbar__logo {
-    
+.navbar__logo {    
     color: white;
     font-size: 20px;
     line-height: 60px;
@@ -56,15 +48,11 @@ nav .mainMenu li a:hover {
 }
 
 .navbar__logo::first-letter {
-
     color: #E31D1D;
-
 } 
-
 /*-----------------MENU WHY ?--------------------------------------------------------------------------------------------- */
 
 .menu {
-
     text-align: center;
     width: 100%;
     height: 30px;
@@ -76,19 +64,13 @@ nav .mainMenu li a:hover {
     font-size: 1em;
     cursor: pointer;
 }
-
 /*-----------------SECTION CONTACT--------------------------------------------------------------------------------------------- */
 
-
 section#contact {
-
     padding: 100px 15px;
-
 }
 
-
 section#contact .container {
-
     max-width: 900px;
     margin: 0 auto;
     display: flex;
@@ -99,54 +81,40 @@ section#contact .container {
     border-radius: 15px;
     box-sizing: border-box;
     background-color: #162647;
-    
 }  
 
 section#contact .container .title {
-
     text-align: center;
     margin-bottom: 6px;
     color: white
 }
 
 section#contact .container .title h6 {
-
     font-size: 1em;
 }
 
 section#contact .container .title h3 {
-
     font-size: 2.2em;
 }
 
-
 section#contact .container form {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 750px;
-    
 }
 
-
 section#contact .container form input {
-    width: 45%;
-    
+    width: 45%;    
 }
 
 section#contact .container form input:hover,
 section#contact .container form textarea:hover {
-
     border-bottom: 3.5px solid #E31D1D;
-    
-   
-
 }
 
 section#contact .container form input,
 section#contact .container form textarea {
-
     margin: 10px 0;
     padding: 10px;
     box-sizing: border-box;
@@ -155,20 +123,15 @@ section#contact .container form textarea {
     border-bottom: 2px;
     transition: 0.3s;
     border-radius: 4px;
-
 }
 
 section#contact .container form textarea {
-
     width: 100%;
     height: 100px;
     resize: none;
-
-
 }
 
 section#contact .container form button {
-    
     width: 120px;
     height: 40px;
     border-radius: 8px;
@@ -181,49 +144,29 @@ section#contact .container form button {
     outline: none;
     cursor: pointer;
     transition: .2s;
-    
 }
 
 section#contact .container button:hover {
-
     transition: .5s;
     background-color: #E31D1D;
     transform: translateY(-5px);
-
 }
-
 /*-----------------FOOTER--------------------------------------------------------------------------------------------- */
 
-
 .foot {
-
     color: white;
     padding: 1rem;
     background-color: #1B2D53;
     text-align: center;
     font-size: 12px;
     position:relative;
-
 }
 
 .mention {
-
     color: white;
     text-decoration: none;
-
 }
-
 /*-----------------RESPONSIVE--------------------------------------------------------------------------------------------- */
-
-@media screen and ( max-width: 839px){
-
-    nav .mainMenu {
-        
-        font-size: 200px;
-    }
-
-
-}
 
 @media screen and ( max-width: 640px) {
     

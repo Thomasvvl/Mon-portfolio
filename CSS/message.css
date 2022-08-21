@@ -1,76 +1,54 @@
 /*-----------------CORPS--------------------------------------------------------------------------------------------- */
 html{
-
     width: 100%;
     height: 100%;
 }
 
-
-
-body {
-    
+body {    
     margin: 0;
     padding: 0;
     width: 100%;
     height: 83%;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     background-color: #1B2D53;
-    filter: drop-shadow(5px 5px 10px black);
-        
+    filter: drop-shadow(5px 5px 10px black);  
 }
-
-
 /*-----------------CONTENUE--------------------------------------------------------------------------------------------- */
 
-
 .container {
-
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 120px;
     color: white;
     text-align: justify;
     font-size: 20px; 
-
-
 }
 
 .message {
-    
     grid-row-start: 1;
     grid-row-end: 2;
-    
 }
 
 .message h3 {
-
     font-size: 15px;
     letter-spacing: 3px;
 }
 
-
-.message h1 {
-    
+.message h1 {    
     letter-spacing: 5px;
 }
 
 .cercle {
-
     width: 300px;
     height: 280px;
     border-radius: 100%;
     margin-top: -26.5%;
     margin-left: 75px;
     background: #162647;
-
-
 }
-
-
 /*-----------------BOUTTON RETOUR--------------------------------------------------------------------------------------------- */
 
 .message a {
-
     background-color: #1B2D53;
     color: white;
     padding: 15px;
@@ -82,33 +60,23 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: .4s;
-
-
 }
 
 .retour {
-
     margin-top: 5%;
-
 }
 
 .message .back {
-
     margin-top: 80px;
-
 }
 
 .back:hover {
-
     transition: .5s;
     background-color: #E31D1D;
-
 }
-
 /*-----------------FOOTER--------------------------------------------------------------------------------------------- */
 
 footer {
-
     color: white;
     padding: 1rem;
     margin-top: auto;
@@ -118,15 +86,10 @@ footer {
     width: 97.5%;
     position: absolute;
     bottom: 0;
-
-    
-
 }
 
 .mention {
-
     color: white;
     text-decoration: none;
     transition: 0.5s;
-
 }
