@@ -30,7 +30,7 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-// //MENU BURGER ---------------------------------------------------------------
+//MENU BURGER ---------------------------------------------------------------
 
 const mainMenu = document.querySelector(".mainMenu");
 const closeMenu = document.querySelector(".closeMenu");
